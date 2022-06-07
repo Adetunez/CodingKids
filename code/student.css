@@ -1,0 +1,47 @@
+a button:hover{
+    background:#840951;
+} 
+li a:hover{
+    color: #840951;
+}
+.button button[type=submit]{
+    position: absolute;
+    margin-left: 176px;
+    margin-top: 1px;
+}
+button[type=submit]:hover{
+    background-color: #840951;
+}
+.btw{
+    margin-top: -90px;
+}
+.btn{
+    margin-top: -20px;
+}
+images{
+    width: 1040px;
+    height: 260px;
+    background-size: cover;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(180deg,hsla(0,0%,100%,0),hsla(0,0%,100%,.05) .01%,transparent 23.91%,rgba(0,0,0,.9)),url(images/Rectangle1.png) no-repeat;
+    margin-left: 115px;
+}
+.card{
+    position: absolute;
+    margin-top: -200px;
+}
+.card2{
+    position: absolute;
+    margin-top: -130px;
+    margin-left: 505px;
+}
+.icons{
+    position: absolute;
+    margin-top: 3px;
+}
+footer{
+    background-color: #840951;
+} 

@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="student.css">
+    <script src="script.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</head>
+<body>
+    <nav class="p-5 bg-white md:shadow-none shadow md:flex md:items-center md:justify-around gap-28">
+        <div class="flex justify-between items-center">
+            <a href="index.html" class="text-2xl font-[Popp] cursor-pointer font-bold">
+                <img src="images/logo.png" class="h-10 inline" alt="">CodingKidsAfrica
+            </a>
+            <span class="text-3xl cursor-pointer md:hidden mx-2 block text-red-900">
+                <ion-icon name="menu" onclick="Menu(this)"></ion-icon>
+            </span>
+        </div>
+        <div class=''>
+            <ul class="newul md:flex md:items-center z-40 md:z-auto md:static absolute bg-white w-full left-0 md:w-auto md:py-0 py-0 md:pl-0 pl-7 md:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-500">
+                <a href="student.html">
+                    <button class="px-5 py-3 mx-4 md:mt-0 mt-6 bg-black text-white font-[Poppins] rounded-lg">
+                        Find a Trainer
+                    </button>
+                </a>
+                <li class="md:mx-4 mx-8 my-6 md:my-0">
+                    <a href="tutor.html" class="text-xl duration-500">Be a Trainer</a>
+                </li>        
+            </ul>
+        </div>
+    </nav>
+    
+    <section class="">
+        <div class="menu2 mt-10 container flex flex-col items-center lg:flex-row gap-36 mt-14 lg:mt-10 z-10">
+            <div class="flex flex-1 flex-col md:ml-40 ml-12 mr-36 md:mr-0 mb-0 md:mb-12 transition-all ease-in duration-1000">
+                <h2 class="text-3xl font-bold lg:text-4xl text-justify mb-12">
+                    Equip your child with skills of the future
+                </h2>
+                <p class="text-lg font-medium text-justify mb-12">
+                    Find qualified trainers to teach your child valuable digital skills and prepare them for the future.
+                </p>
+                <div class="flex justify-center flex-wrap">
+                    <a href="student.html">
+                        <button type="button" class="bg-black rounded-lg text-white px-4 py-2 duration-500">
+                            Find a Trainer
+                        </button>
+                    </a>
+                </div>
+            </div>
+            <div class="btw mb-12 md:mb-16 md:mr-40 mr-0 md:mt-0 transition-all ease-in duration-1000">
+                <img src="images/Rectangle 4.png" class="md:w-72">
+            </div>
+        </div>
+        <div class="bg-gray-200 md:mt-4 mt-0 flex flex-col lg:flex-row items-center gap-36 z-10 pt-8 md:pt-20" id="Programs">
+            <div class="flex flex-1 flex-col md:ml-40 ml-12 mr-36 md:mr-0 mb-0 md:mb-12 transition-all ease-in duration-1000">
+                <h2 class="text-2xl font-bold lg:text-4xl text-justify mb-12">
+                    Digital skills specially designed for your kids.
+                </h2>
+                <p class="text-lg font-medium text-justify mb-12">
+                    Specially designed skills to help your child learn better in a short period of time
+                </p>
+                <div class="flex justify-start flex-wrap" md:flex-none >
+                    <a href="student.html">
+                        <button type="button" class="bg-black rounded-lg text-white px-4 py-2 duration-500">
+                            Find a Trainer
+                        </button>
+                    </a>
+                </div>
+            </div>
+            <div class="grid grid-cols-2 gap-16 md:grid-cols-3 btw mb-10 md:mb-16 lg:mb-0 md:mr-40 mr-0 transition-all ease-in duration-1000">
+                <div class="ml-12 md:ml-0">
+                    <ion-icon name="logo-figma" class="text-purple-900 text-2xl mb-2"></ion-icon>
+                    <h3 class="font-bold text-xl mb-2 lg:text-2xl">UX Design</h3>
+                    <p class="font-medium text-lg">Learn how to design websites, app and digital interfaces</p>
+                </div>
+                <div>
+                    <ion-icon name="desktop-outline" class="text-purple-900 text-2xl mb-2"></ion-icon>
+                    <h3 class="font-bold text-xl mb-2 lg:text-2xl">Web Development</h3>
+                    <p class="font-medium text-lg">Create and build beautiful and useful websites</p>
+                </div>
+                <div class="ml-12 md:ml-0">
+                    <ion-icon name="phone-portrait-outline" class="text-purple-900 text-2xl mb-2"></ion-icon>
+                    <h3 class="font-bold text-xl mb-2 lg:text-2xl">App Development</h3>
+                    <p class="font-medium text-lg">Develop new apps that will be used globally</p>
+                </div>
+                <div>
+                    <ion-icon name="paper-plane-outline" class="text-purple-900 text-2xl mb-2"></ion-icon>
+                    <h3 class="font-bold text-xl mb-2 lg:text-2xl">Graphic Design</h3>
+                    <p class="font-medium text-lg">Learn graphics design whether on phone of on your pc</p>
+                </div>
+                <div class="ml-12 md:ml-0">
+                    <ion-icon name="hardware-chip-outline" class="text-purple-900 text-2xl mb-2"></ion-icon>
+                    <h3 class="font-bold text-xl mb-2 lg:text-2xl">Embedded System</h3>
+                    <p class="font-medium text-lg">Build robots, combine electronics with programming.</p>
+                </div>
+                <div>
+                    <ion-icon name="play-forward-outline" class="text-purple-900 text-2xl mb-2"></ion-icon>
+                    <h3 class="font-bold text-xl mb-2 lg:text-2xl">More...</h3>
+                    <p class="font-medium text-lg">Want more skills?<br> 
+                    Contact us
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="container flex flex-col-reverse items-center lg:flex-row gap-12 md:gap-36 mt-14 lg:mt-16 z-10">
+            <div class="mb-12 md:mb-12 md:ml-40 ml-0 md:mt-0 transition-all ease-in duration-1000">
+                <img src="images/Rectangle 14.png" class="md:w-72">
+            </div>
+            <div class="btn flex flex-1 flex-col md:mr-40 mr-12 ml-12 md:ml-0 mb-0 md:mb-0 transition-all ease-in duration-1000">
+                <h2 class="text-3xl font-bold lg:text-4xl text-justify mb-12">
+                    Learn both online and offline with any device
+                </h2>
+                <p class="text-lg font-medium text-justify mb-12">
+                    You don’t need a laptop to learn, whether online or offline anywhere you are, our teachers deliver excellent, quality service.
+                </p>
+                <div class="flex justify-center flex-wrap">
+                    <a href="student.html">
+                        <button type="button" class="bg-black rounded-lg text-white px-4 py-2 duration-500">
+                            Find a Trainer
+                        </button>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="container flex flex-col items-center lg:flex-row gap-36 mt-0 lg:mt-20 z-10">
+            <div class="flex flex-1 flex-col md:ml-40 ml-12 mr-36 md:mr-0 mb-0 md:mb-12 transition-all ease-in duration-1000">
+                <h2 class="text-3xl font-bold lg:text-4xl text-justify mb-12">
+                    Learn with highly rated tutors at your time and pace.
+                </h2>
+                <p class="text-lg font-medium text-justify mb-12">
+                    Choose your available time and place, Get tutors closest to your location
+                </p>
+                <div class="flex justify-center flex-wrap">
+                    <a href="student.html">
+                        <button type="button" class="bg-black rounded-lg text-white px-4 py-2 duration-500">
+                            Let's start learning
+                        </button>
+                    </a>
+                </div>
+            </div>
+            <div class="btw mb-12 md:mb-8 md:mr-40 mr-0 md:mt-0 transition-all ease-in duration-1000">
+                <img src="images/Rectangle 14-1.png" class="md:w-72">
+            </div>
+        </div>
+        <div class="mt-4 md:mt-20">
+            <h2 class="text-4xl font-bold text-justify px-8 md:px-72">Learning has never been made easier</h2>
+            <div class="flex mt-8 ml-9 md:ml-72 items-center">
+                <div>
+                    <img src="images/IMG-20220331-WA0006.jpg" class="w-24 h-24 rounded-2xl">
+                </div>
+                <div class="ml-10">
+                    <h3 class="font-bold text-lg">Dr (Mrs) N.E. Adesiji</h3>
+                    <p class="text-lg">Physics Lecturer at F.U.T.A</p>
+                </div>
+            </div>
+            <p class="text-lg text-justify px-8 md:px-72 mt-8">My daughter never had interest in programming, but with Codingkids the story changed. She is not just enjoying the act of writing codes, she is now helping her brother understand it better. I am happy that I engaged Codingkids to introduce my children to the act of programming.</p>
+        </div>
+        <div class="container flex flex-col items-center lg:flex-row gap-36 mt-16 lg:mt-20 z-10 bg-gray-200 pt-8 md:pt-20 ">
+            <div class="flex flex-1 flex-col md:ml-40 ml-12 mr-36 md:mr-0 mb-0 md:mb-12 transition-all ease-in duration-1000">
+                <h2 class="text-3xl font-bold lg:text-4xl text-justify mb-12">
+                    Why people believe in us
+                </h2>
+                <p class="text-lg font-medium text-justify mb-12">
+                    We specialize in turning kids into developers and products designers preparing them for a bright future ahead.We nurture future tech experts
+                </p>
+                <div class="flex justify-center flex-wrap">
+                    <a href="#contact">
+                        <button type="button" class="bg-black rounded-lg text-white px-4 py-2 duration-500">
+                            Contact Us
+                        </button>
+                    </a>
+                </div>
+            </div>
+            <div class="btw mb-12 md:mb-8 md:mr-40 mr-0 md:mt-0 transition-all ease-in duration-1000">
+                <img src="images/Rectangle 16.png" class="md:w-72">
+            </div>
+        </div>
+        <div class="container flex flex-col-reverse items-center lg:flex-row gap-12 md:gap-36 mt-14 lg:mt-16 z-10">
+            <div class="mb-12 md:mb-12 md:ml-40 ml-0 md:mt-0 transition-all ease-in duration-1000">
+                <img src="images/Rectangle 17.png" class="md:w-72">
+            </div>
+            <div class="btn flex flex-1 flex-col md:mr-40 mr-12 ml-12 md:ml-0 mb-0 md:mb-0 transition-all ease-in duration-1000">
+                <h2 class="text-3xl font-bold lg:text-4xl text-justify mb-12">
+                    Teach what you love, Be your own boss
+                </h2>
+                <p class="text-lg font-medium text-justify mb-12">
+                    Join Codingkids as a digital skills teacher. We provide the avenue to teach what you love.
+                </p>
+                <div class="flex justify-center flex-wrap">
+                    <a href="tutor.html">
+                        <button type="button" class="rounded-lg text-black border border-2 border-black px-4 py-2 duration-500">
+                            Start training today
+                        </button>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="md:mt-28">
+            <img src="images/Rectangle1.png" class="md:ml-40 md:h-64 md:w-3/4">
+            <div class="card">
+                <h3 class="text-white text-2xl md:text-4xl font-bold md:ml-72 mx-8 mt-12 md:mt-0">Secure your child’s future with digital skills</h3>
+            </div>
+            <a href="student.html" class="card2 mx-28 md:mx-96">
+                <button type="button" class="mt-12 md:mt-0 border border-2 border-white md:text-lg text-white rounded-lg font-bold px-4 py-2 duration-500">
+                    Secure your child's future
+                </button>
+            </a>
+        </div> 
+    </section>
+    <footer class="md:flex md:items-center md:justify-around mt-2 md:mt-20">
+        <div class="md:flex md:items-center md:justify-around grid grid-cols-1 gap-4 md:gap-12 py-8 px-6 md:grid-cols-4">
+            <div>
+                <div class="mb-1">
+                    <a href="index.html" class="text-2xl font-[Popp] cursor-pointer font-bold">
+                        <img src="images/logo.png" class="h-10 inline" alt="">CodingKidsAfrica
+                    </a>
+                </div>
+                <h3 class="mb-0 md:mb-6 text-sm font-semibold">We equip your child with the skills of the future.</h3>
+            </div>
+            <div class="md:flex md:gap-12 gap-0" id="contact">
+                <div class="mb-8 md:mb-0">
+                    <a href="tel:08132566201" class="icons">
+                        <ion-icon name="call" class="text-2xl"></ion-icon>
+                    </a> 
+                    <span class="font-semibold text-xl ml-8">08132566201</span>
+                </div>
+                <div class="mb-8 md:mb-0"> 
+                    <a href="mailto:adelajaebenezer@gmail.com?" class="icons">
+                        <ion-icon name="at-circle" class="text-2xl"></ion-icon>
+                    </a>
+                    <span class="font-semibold text-xl ml-8" >adelajapeter@gmail.com</span>
+                </div>
+                <div>
+                    <a href="https:wa.me/message/626JXKRUVWKKK1" class="icons">
+                        <ion-icon name="logo-whatsapp" class="text-2xl text-green-500"></ion-icon>
+                    </a>
+                    <span class="font-semibold text-xl ml-8">08132566201</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
+        

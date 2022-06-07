@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="student.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="script.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</head>
+<body>
+    <nav class="p-5 bg-white md:shadow-none shadow md:flex md:items-center md:justify-around">
+        <div class="flex justify-between items-center">
+            <a href="index.html" class="text-2xl font-[Popp] cursor-pointer font-bold">
+                <img src="images/logo.png" class="h-10 inline" alt="">CodingKidsAfrica
+            </a>
+            <span class="text-3xl cursor-pointer md:hidden mx-2 block text-red-900">
+                <ion-icon name="menu" onclick="Menu(this)"></ion-icon>
+            </span>
+        </div>
+        <ul class="newul md:flex md:items-center z-40 md:z-auto md:static absolute bg-white w-full left-0 md:w-auto md:py-0 py-0 md:pl-0 pl-7 md:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-500">
+            <li class="md:mx-4 mx-8 my-6 md:my-0">
+                <a href="/#Programs" class="text-xl duration-500">Our Programs</a>
+            </li>
+            <li class="md:mx-4 mx-8 my-6 md:my-0">
+                <a href="#" class="text-xl duration-500">About Us</a>
+            </li>  
+            <li class="md:mx-4 mx-8 my-6 md:my-0">
+                <a href="#Cont" class="text-xl duration-500">Contact</a>
+            </li> 
+            <a href="student.html">
+                <button class="px-5 py-3 mx-4 md:mt-0 mt-6 bg-black text-white font-[Poppins] rounded-lg">
+                    Start Now
+                </button>
+            </a>     
+        </ul>
+    </nav>
+    <div class="menu2 bg-white transition-all ease-in duration-200">
+        <div class="w-full pt-10">
+          <div class="container mx-auto py-8">
+            <div class="w-5/6 lg:w-1/2 mx-auto bg-white rounded shadow-2xl">
+                <div class="px-8 pt-12">
+                    <h3 class="text-3xl font-bold pb-2">You can also code / design...</h3>
+                    <p class="font-serif text-sm">Albert Einstein - 'If you can't explain it to a six year old, you don't understand it yourself.'</p>
+                </div>
+                <div class="py-8 px-8">
+                    <div class="flex mb-4">
+                        <div class="w-1/2 mr-1">
+                            <label class="block text-grey-darker text-sm font-medium mb-2" for="first_name">First Name</label>
+                            <input class="appearance-none border rounded w-full py-2 px-3 text-grey-darker" id="first_name" type="text" placeholder="First Name"required>
+                        </div>
+                        <div class="w-1/2 ml-1">
+                            <label class="block text-grey-darker text-sm font-medium mb-2" for="last_name">Last Name</label>
+                            <input class="appearance-none border rounded w-full py-2 px-3 text-grey-darker" id="last_name" type="text" placeholder="Last Name"required>
+                        </div>
+                    </div>
+                    <div class="flex mb-4">
+                        <div class="w-1/2 mr-1">
+                            <label class="block text-grey-darker text-sm font-medium mb-2" for="age">Age</label>
+                            <input class="appearance-none border rounded w-full py-2 px-3 text-grey-darker" id="age" type="number" placeholder="Age"required>
+                        </div>
+                        <div class="w-1/2 ml-1">
+                            <label for="gender" class="block mb-2 text-sm font-medium text-gray-darker">Gender</label>
+                            <select id="gender" class=" bg-gray-50 border text-gray-400 text-sm rounded focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"required>
+                                <option>Male</option>
+                                <option>Female</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="mb-4">
+                        <label for="Education" class="block mb-2 text-sm font-medium text-gray-darker">Level of Education</label>
+                        <select id="Education" class="bg-gray-50 border text-gray-400 text-sm rounded focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"required>
+                            <option>Undergraduate</option>
+                            <option>NCE</option>
+                            <option>OND</option>
+                            <option>HND</option>
+                            <option>BSC/B.TECH</option>
+                            <option>Masters</option>
+                            <option>PhD</option>
+                        </select>
+                    </div>
+                    <div class="mb-4">
+                        <label class="block text-grey-darker text-sm font-medium mb-2" for="email">Email Address</label>
+                        <input class="appearance-none border rounded w-full py-2 px-3 text-grey-darker" id="email" type="email" placeholder="example@gmail.com"required>
+                    </div>
+                    <div class="mb-4">
+                        <label class="block text-grey-darker text-sm font-medium mb-2" for="phone">Phone Number</label>
+                        <input class="appearance-none border rounded w-full py-2 px-3 text-grey-darker" id="phone" type="number" placeholder="Phone Number"required>
+                    </div>
+                    <div class="mb-4">
+                        <label for="duration" class="block mb-2 text-sm font-medium text-gray-darker">Hours Available per Week</label>
+                        <select id="duration" class="bg-gray-50 border text-gray-400 text-sm rounded focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"required>
+                            <option>2 hours</option>
+                            <option>4 hours</option>
+                            <option>> 4 hours</option>
+                        </select>
+                    </div>
+                    <div class="flex mb-4">
+                        <div class="w-1/2 mr-1">
+                            <label class="block text-grey-darker text-sm font-medium mb-2" for="first_name">City</label>
+                            <input class="appearance-none border rounded w-full py-2 px-3 text-grey-darker" id="first_name" type="text" placeholder="City"required>
+                        </div>
+                        <div class="w-1/2 ml-1">
+                            <label class="block text-grey-darker text-sm font-medium mb-2" for="last_name">State</label>
+                            <input class="appearance-none border rounded w-full py-2 px-3 text-grey-darker" id="last_name" type="text" placeholder="State"required>
+                        </div>
+                        <div class="w-1/2 ml-1">
+                            <label class="block text-grey-darker text-sm font-medium mb-2" for="last_name">Country</label>
+                            <input class="appearance-none border rounded w-full py-2 px-3 text-grey-darker" id="last_name" type="text" placeholder="Country"required>
+                        </div>
+                    </div>
+                    <div class="mb-4">
+                        <label for="course" class="block mb-2 text-sm font-medium text-gray-darker">Course you can teach</label>
+                        <select id="course" class="bg-gray-50 border text-gray-400 text-sm rounded focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"required>
+                            <option>Web Development</option>
+                            <option>App Development</option>
+                            <option>UI/UX</option>
+                            <option>Embedded system and Robotics</option>
+                            <option>Graphics Designing</option>
+                        </select>
+                    </div>
+                    <div class="mb-4">
+                        <label for="number" class="block mb-2 text-sm font-medium text-gray-darker">No of students you can teach at a time</label>
+                        <select id="number" class="bg-gray-50 border text-gray-400 text-sm rounded focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"required>
+                            <option>1</option>
+                            <option>2</option>
+                            <option>10</option>
+                            <option>above 10</option>
+                        </select>
+                    </div>
+                    <div class="mb-4">
+                        <label for="duration" class="block mb-2 text-sm font-medium text-gray-darker">How long have you been coding?</label>
+                        <select id="duration" class="bg-gray-50 border text-gray-400 text-sm rounded focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"required>
+                            <option>1 year</option>
+                            <option>2 years</option>
+                            <option>more than 2 years</option>
+                        </select>
+                    </div>
+                    <div class="mb-4">
+                        <label for="exampleFormControlTextarea1" class="form-label inline-block mb-2 text-sm font-medium text-gray-darker">In three sentences, tell us about yourself?</label>
+                        <textarea class="bg-gray-50 w-full px-3 py-2 text-gray-700 border rounded focus:outline-none" rows="3" placeholder="About you" required></textarea>
+                      </div>
+                      <div class="flex items-start mb-6">
+                        <div class="flex items-center h-5">
+                          <input id="terms" type="checkbox" value="" class="w-4 h-4 border border-gray-300 rounded bg-gray-50 focus:ring-3 focus:ring-blue-300 dark:bg-gray-700 dark:border-gray-600 dark:focus:ring-blue-600 dark:ring-offset-gray-800" required>
+                        </div>
+                        <label for="terms" class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">I have read the <span class="italic text-purple-700 hover:underline"><a href="#"> TERMS AND CONDITIONS </a></span></label>
+                    </div>
+                    <div class="mb-4">
+                        <button type="submit" class="text-white bg-black focus:outline-none font-medium rounded text-sm px-3 py-3 text-center w-full">Join as a Trainer</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="grid grid-cols-2 gap-8 py-8 px-6 md:grid-cols-4">
+            <div>
+                <div class="mb-4">
+                    <a href="index.html" class="font-semibold text-2xl text-gray-400">CodingKids</a>
+                </div>
+                <h3 class="mb-6 text-sm font-semibold text-gray-300">Train Your Kids for the present</h3>
+                <a href="student.html">
+                    <button class="px-5 py-3 bg-gray-400 text-white font-[Poppins] rounded-lg hover:bg-gray-500">
+                        Start Now
+                    </button>
+                </a>  
+            </div>
+            <div>
+                <h3 class="font-semibold text-2xl text-gray-400 mb-4">Hi developers!</h3>
+                <p class="text-sm font-semibold text-gray-300">If you want to be part of CodingKids teachers, just contact us by any of our media channels</p>
+            </div>
+            <div>
+                <ul class="text-gray-300">
+                    <li class="mb-4">
+                        <a href="index.html" class="hover:underline hover:text-white">Home</a>
+                    </li>
+                    <li class="mb-4">
+                        <a href="#" class="hover:underline hover:text-white">About Us</a>
+                    </li>
+                    <li class="mb-4">
+                    <a href="/#Programs" class="hover:underline hover:text-white">Programs</a>
+                    </li>
+                    <li class="mb-1">
+                        Subscribe to our newsletter
+                    </li>
+                    <form class="button flex">
+                        <input type="email" class="border rounded-full py-1 px-3 text-grey-darker" id="email" placeholder="Enter your mail">
+                        <button type="submit" class="bg-gray-400 rounded-full absolute py-1 px-2">
+                            <ion-icon name="paper-plane-outline"></ion-icon>
+                        </button>
+                    </form>
+                </ul>
+            </div>
+            <div>
+                <h3 class="font-semibold text-2xl text-gray-400 mb-4" id="Cont">Contact</h3>
+                <div class="ml-10 grid grid-cols-1">
+                    <a href="https:wa.me/message/626JXKRUVWKKK1" target="_blank" class="text-green-500">
+                        <ion-icon name="logo-whatsapp"></ion-icon>
+                    </a>
+                    <a href="mailto:adelajaebenezer@gmail.com?" class="text-red-400">
+                        <ion-icon name="mail-outline"></ion-icon>
+                    </a> 
+                    <a href="tel:08132566201" class="text-blue-400">
+                        <ion-icon name="call-outline"></ion-icon>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
